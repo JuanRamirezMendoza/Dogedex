@@ -6,7 +6,7 @@ class DogDTOMapper {
 
     private fun fromDogDTOToDogDomain(dogDTO: DogDTO): Dog {
         return Dog(dogDTO.id, dogDTO.index, dogDTO.name, dogDTO.type,
-            dogDTO.heightFemale, dogDTO.heightMale, dogDTO.imgUrl, dogDTO.lifeExpectancy,
+            dogDTO.heightFemale, dogDTO.heightMale, dogDTO.lifeExpectancy,
             dogDTO.temperament, dogDTO.weightFemale, dogDTO.weightMale)
     }
 
