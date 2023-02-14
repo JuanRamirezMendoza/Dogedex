@@ -3,6 +3,7 @@ package com.jsrm.dogedex.dogDetail
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import coil.load
 import com.jsrm.dogedex.Dog
 import com.jsrm.dogedex.R
 import com.jsrm.dogedex.databinding.ActivityDogDetailBinding
@@ -26,7 +27,10 @@ class DogDetailActivity : AppCompatActivity() {
 
         binding.dogIndex.text = getString(R.string.dog_index_format, dog.index)
         binding.lifeExpectancy.text = getString(R.string.dog_life_expectancy_format, dog.lifeExpectancy)
-
         binding.dog = dog
+        binding.dogImage.load(dog.imgUrl)
+        binding.closeButton.setOnClickListener {
+            finish()
+        }
     }
 }

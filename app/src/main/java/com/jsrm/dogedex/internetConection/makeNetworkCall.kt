@@ -1,5 +1,6 @@
 package com.jsrm.dogedex.internetConection
 
+import android.util.Log
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.net.UnknownHostException
@@ -12,6 +13,7 @@ suspend fun <T> makeNetworkCall(
     } catch (e: UnknownHostException) {
         ResponseStatus.Error("No hay internet")
     } catch (e: Exception) {
+        Log.e("XDDD", e.toString())
         ResponseStatus.Error("Error desconocido")
     }
 }
