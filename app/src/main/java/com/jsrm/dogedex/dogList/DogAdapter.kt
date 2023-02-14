@@ -45,7 +45,7 @@ class DogAdapter : ListAdapter<Dog, DogAdapter.DogViewHolder>(DiffCallBack) {
             binding.dogListItemLayout.setOnClickListener {
                 onItemClickListener?.invoke(dog)
             }
-            binding.dogImage.load(dog.imgUrl)
+            binding.dogImage.load(dog.imageUrl)
         }
     }
 }

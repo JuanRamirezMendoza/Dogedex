@@ -5,17 +5,19 @@ import com.jsrm.dogedex.Dog
 class DogDTOMapper {
 
     private fun fromDogDTOToDogDomain(dogDTO: DogDTO): Dog {
-        return Dog(dogDTO.id,
-            dogDTO.type,
-            dogDTO.heightMale,
-            dogDTO.heightFemale,
-            dogDTO.imgUrl,
+        return Dog(
+            dogDTO.id,
             dogDTO.index,
-            dogDTO.lifeExpectancy,
             dogDTO.name,
+            dogDTO.type,
+            dogDTO.heightFemale,
+            dogDTO.heightMale,
+            dogDTO.imageUrl,
+            dogDTO.lifeExpectancy,
             dogDTO.temperament,
             dogDTO.weightFemale,
-            dogDTO.weightMale)
+            dogDTO.weightMale
+        )
     }
 
     fun fromDogDTOListToDogDomainList(dogDTOList: List<DogDTO>): List<Dog> {

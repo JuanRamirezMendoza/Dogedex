@@ -28,7 +28,7 @@ class DogDetailActivity : AppCompatActivity() {
         binding.dogIndex.text = getString(R.string.dog_index_format, dog.index)
         binding.lifeExpectancy.text = getString(R.string.dog_life_expectancy_format, dog.lifeExpectancy)
         binding.dog = dog
-        binding.dogImage.load(dog.imgUrl)
+        binding.dogImage.load(dog.imageUrl)
         binding.closeButton.setOnClickListener {
             finish()
         }
