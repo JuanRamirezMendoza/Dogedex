@@ -12,10 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dogedex">
         <activity
-            android:name=".dogDetail.DogDetailActivity"
-            android:exported="false" />
-        <activity
-            android:name=".dogList.DogListActivity"
+            android:name=".auth.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,8 +21,14 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".dogDetail.DogDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dogList.DogListActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
