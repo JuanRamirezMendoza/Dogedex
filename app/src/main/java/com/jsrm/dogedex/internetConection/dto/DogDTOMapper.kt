@@ -1,6 +1,6 @@
 package com.jsrm.dogedex.internetConection.dto
 
-import com.jsrm.dogedex.Dog
+import com.jsrm.dogedex.model.Dog
 
 class DogDTOMapper {
 

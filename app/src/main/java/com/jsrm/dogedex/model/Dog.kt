@@ -1,4 +1,4 @@
-package com.jsrm.dogedex
+package com.jsrm.dogedex.model
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

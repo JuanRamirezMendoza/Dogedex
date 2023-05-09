@@ -7,9 +7,6 @@ import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.jsrm.dogedex.Dog
-import com.jsrm.dogedex.R
 import com.jsrm.dogedex.databinding.ActivityDogListBinding
 import com.jsrm.dogedex.dogDetail.DogDetailActivity
 import com.jsrm.dogedex.dogDetail.DogDetailActivity.Companion.DOG_KEY

@@ -1,6 +1,6 @@
 package com.jsrm.dogedex.dogList
 
-import com.jsrm.dogedex.Dog
+import com.jsrm.dogedex.model.Dog
 import com.jsrm.dogedex.internetConection.DogsApi.retrofitService
 import com.jsrm.dogedex.internetConection.ResponseStatus
 import com.jsrm.dogedex.internetConection.dto.DogDTOMapper
